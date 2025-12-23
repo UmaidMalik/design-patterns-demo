@@ -5,7 +5,7 @@ public class Demo
 
         IceCream order1 = new BaseIceCream("Vanilla", 2.0);
 
-        IceCream order2 = new Peanut(new BaseIceCream("Vanilla", 2.0));
+        IceCream order2 =  new Sprinkles(new Peanut(order1));
 
         Checkout checkout = new CheckoutProxy();
 
